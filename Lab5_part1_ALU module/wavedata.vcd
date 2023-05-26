@@ -1,0 +1,178 @@
+$date
+	Fri Jan 21 16:27:02 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! ALURESULT [7:0] $end
+$var reg 3 " ALUOP [2:0] $end
+$var reg 8 # OPERAND1 [7:0] $end
+$var reg 8 $ OPERAND2 [7:0] $end
+$scope module ALU $end
+$var wire 8 % AddOut [7:0] $end
+$var wire 8 & AndOut [7:0] $end
+$var wire 8 ' DATA1 [7:0] $end
+$var wire 8 ( DATA2 [7:0] $end
+$var wire 8 ) ForwardOut [7:0] $end
+$var wire 8 * OrOut [7:0] $end
+$var wire 8 + RESULT [7:0] $end
+$var wire 3 , SELECT [2:0] $end
+$var wire 8 - e [7:0] $end
+$var wire 8 . f [7:0] $end
+$var wire 8 / g [7:0] $end
+$var wire 8 0 h [7:0] $end
+$var wire 8 1 out [7:0] $end
+$scope module F1 $end
+$var wire 8 2 DATA2 [7:0] $end
+$var wire 8 3 out [7:0] $end
+$upscope $end
+$scope module A1 $end
+$var wire 8 4 DATA1 [7:0] $end
+$var wire 8 5 DATA2 [7:0] $end
+$var wire 8 6 carry [7:0] $end
+$var wire 8 7 out [7:0] $end
+$upscope $end
+$scope module A2 $end
+$var wire 8 8 DATA1 [7:0] $end
+$var wire 8 9 DATA2 [7:0] $end
+$var wire 8 : out [7:0] $end
+$upscope $end
+$scope module O1 $end
+$var wire 8 ; DATA1 [7:0] $end
+$var wire 8 < DATA2 [7:0] $end
+$var wire 8 = out [7:0] $end
+$upscope $end
+$scope module M1 $end
+$var wire 8 > AddOut [7:0] $end
+$var wire 8 ? AndOut [7:0] $end
+$var wire 8 @ ForwardOut [7:0] $end
+$var wire 8 A OrOut [7:0] $end
+$var wire 3 B SELECT [2:0] $end
+$var wire 8 C e [7:0] $end
+$var wire 8 D f [7:0] $end
+$var wire 8 E g [7:0] $end
+$var wire 8 F h [7:0] $end
+$var reg 8 G out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx G
+bz F
+bz E
+bz D
+bz C
+b0 B
+bz A
+bx @
+bz ?
+bx >
+bz =
+b11110000 <
+b1111 ;
+bz :
+b11110000 9
+b1111 8
+bx 7
+bx 6
+b11110000 5
+b1111 4
+bx 3
+b11110000 2
+bx 1
+bz 0
+bz /
+bz .
+bz -
+b0 ,
+bx +
+bz *
+bx )
+b11110000 (
+b1111 '
+bz &
+bx %
+b11110000 $
+b1111 #
+b0 "
+bx !
+$end
+#1
+b11110000 G
+b11110000 1
+b11110000 !
+b11110000 +
+b11111111 *
+b11111111 =
+b11111111 A
+b0 &
+b0 :
+b0 ?
+b11110000 )
+b11110000 3
+b11110000 @
+#2
+b11111111 G
+b11111111 1
+b11111111 !
+b11111111 +
+b11111111 %
+b11111111 7
+b11111111 >
+b0 6
+b1 "
+b1 ,
+b1 B
+#5
+b0 G
+b0 1
+b0 !
+b0 +
+b10 "
+b10 ,
+b10 B
+#8
+b11111111 G
+b11111111 1
+b11111111 !
+b11111111 +
+b11 "
+b11 ,
+b11 B
+b10110000 $
+b10110000 (
+b10110000 2
+b10110000 5
+b10110000 9
+b10110000 <
+b10001111 #
+b10001111 '
+b10001111 4
+b10001111 8
+b10001111 ;
+#9
+b10111111 G
+b10111111 1
+b10111111 !
+b10111111 +
+b10000000 &
+b10000000 :
+b10000000 ?
+b10111111 *
+b10111111 =
+b10111111 A
+b10110000 )
+b10110000 3
+b10110000 @
+#10
+b111111 %
+b111111 7
+b111111 >
+b1 6
+#28
